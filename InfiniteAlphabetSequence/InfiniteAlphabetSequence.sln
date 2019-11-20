@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfiniteAlphabetSequence", "InfiniteAlphabetSequence\InfiniteAlphabetSequence.csproj", "{46775F31-5509-41CD-9F23-4F97043F6B5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfiniteAlphabetSequence.Tests", "InfiniteAlphabetSequence.Tests\InfiniteAlphabetSequence.Tests.csproj", "{D453A7F2-8A5C-4CA3-A542-0B57C5661CE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46775F31-5509-41CD-9F23-4F97043F6B5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46775F31-5509-41CD-9F23-4F97043F6B5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46775F31-5509-41CD-9F23-4F97043F6B5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46775F31-5509-41CD-9F23-4F97043F6B5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D453A7F2-8A5C-4CA3-A542-0B57C5661CE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D453A7F2-8A5C-4CA3-A542-0B57C5661CE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D453A7F2-8A5C-4CA3-A542-0B57C5661CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D453A7F2-8A5C-4CA3-A542-0B57C5661CE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31ED7F69-D530-42B2-8E99-35CB04BF00AE}
+	EndGlobalSection
+EndGlobal
