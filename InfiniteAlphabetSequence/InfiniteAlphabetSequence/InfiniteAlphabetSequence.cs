@@ -8,12 +8,16 @@ namespace InfiniteAlphabetSequence
         private static char[] capitalAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
         private static char[] alphabet = "abcdefghijklmnopqrstuvwxyz".ToCharArray();
 
-        public static string Generate(string current, bool capitalLetters = true)
+        public static string Generate(string current)
         {
+            var capitalLetters = true;
+
             if (string.IsNullOrEmpty(current))
             {
                 return capitalLetters ? capitalAlphabet[0].ToString() : alphabet[0].ToString();
             }
+
+            capitalLetters = char.IsUpper(current[0]);
 
             return Base26Sequence(capitalLetters).SkipWhile(x => x != current).Skip(1).First();
         }
@@ -22,7 +26,9 @@ namespace InfiniteAlphabetSequence
         {
             long i = 0L;
             while (true)
+            {
                 yield return Base26Encode(i++, capitalLetters);
+            }
         }
 
         private static string Base26Encode(long value, bool capitalLetters)

@@ -6,7 +6,7 @@ namespace InfiniteAlphabetSequence.Tests
     public class InfiniteAlphabetSequenceTest
     {
         [TestMethod]
-        public void WhenStringEmpty_ReturnFirstCapitalAlphabetLetter()
+        public void WhenStringEmpty_ReturnFirstAlphabetLetter()
         {
             var sequence = InfiniteAlphabetSequence.Generate("");
             Assert.AreEqual("A", sequence);
@@ -17,13 +17,6 @@ namespace InfiniteAlphabetSequence.Tests
         {
             var sequence = InfiniteAlphabetSequence.Generate("Z");
             Assert.AreEqual("AA", sequence);
-        }
-
-        [TestMethod]
-        public void IfNotCapitalAndStringEmpty_ReturnFirstAlphabetLetter()
-        {
-            var sequence = InfiniteAlphabetSequence.Generate("", false);
-            Assert.AreEqual("a", sequence);
         }
 
         [TestMethod]
@@ -38,6 +31,27 @@ namespace InfiniteAlphabetSequence.Tests
         {
             var sequence = InfiniteAlphabetSequence.Generate("GHIJ");
             Assert.AreEqual("GHIK", sequence);
+        }
+
+        [TestMethod]
+        public void WhenNotCapitalAndLastAlphabetLetter_StartsFromTheBegining()
+        {
+            var sequence = InfiniteAlphabetSequence.Generate("z");
+            Assert.AreEqual("aa", sequence);
+        }
+
+        [TestMethod]
+        public void WhenNotCapitalAndIfSequenceWithOneCharacter_ReturnNextOfTheSequence()
+        {
+            var sequence = InfiniteAlphabetSequence.Generate("g");
+            Assert.AreEqual("h", sequence);
+        }
+
+        [TestMethod]
+        public void WhenNotCapitalIfSequenceWithMoreThanOneCharacter_ReturnNextOfTheSequence()
+        {
+            var sequence = InfiniteAlphabetSequence.Generate("ghij");
+            Assert.AreEqual("ghik", sequence);
         }
     }
 }
