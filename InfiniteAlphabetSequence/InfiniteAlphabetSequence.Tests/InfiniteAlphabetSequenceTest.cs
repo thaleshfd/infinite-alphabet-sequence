@@ -1,3 +1,4 @@
+using InfiniteAlphabetSequenceGenerator;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Tests
