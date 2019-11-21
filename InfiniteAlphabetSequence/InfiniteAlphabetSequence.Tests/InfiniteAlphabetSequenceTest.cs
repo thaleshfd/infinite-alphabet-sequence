@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace InfiniteAlphabetSequence.Tests
+namespace Tests
 {
     [TestClass]
     public class InfiniteAlphabetSequenceTest
