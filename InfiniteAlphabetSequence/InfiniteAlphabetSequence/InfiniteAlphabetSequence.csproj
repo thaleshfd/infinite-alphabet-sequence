@@ -8,7 +8,7 @@
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>infinite alphabet sequence</PackageTags>
     <PackageProjectUrl>https://github.com/thaleshfd/infinite-alphabet-sequence</PackageProjectUrl>
-    <Version>1.0.4</Version>
+    <Version>1.0.5</Version>
     <PackageLicenseUrl>https://github.com/thaleshfd/infinite-alphabet-sequence</PackageLicenseUrl>
   </PropertyGroup>
 
