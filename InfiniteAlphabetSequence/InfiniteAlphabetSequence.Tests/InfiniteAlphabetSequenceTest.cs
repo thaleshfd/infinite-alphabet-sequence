@@ -54,5 +54,12 @@ namespace Tests
             var sequence = InfiniteAlphabetSequence.Generate("ghij");
             Assert.AreEqual("ghik", sequence);
         }
+
+        [TestMethod]
+        public void WhenContainsSpecialCharacters_RemoveThemAndReturnNextOfSequence()
+        {
+            var sequence = InfiniteAlphabetSequence.Generate("ab#c d*");
+            Assert.AreEqual("abce", sequence);
+        }
     }
 }

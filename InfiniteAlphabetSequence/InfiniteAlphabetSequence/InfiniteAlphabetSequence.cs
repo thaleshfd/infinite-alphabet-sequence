@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace InfiniteAlphabetSequenceGenerator
 {
@@ -10,21 +11,21 @@ namespace InfiniteAlphabetSequenceGenerator
 
         public static string Generate(string current)
         {
-            var capitalLetters = true;
-
             if (string.IsNullOrEmpty(current))
             {
-                return capitalLetters ? capitalAlphabet[0].ToString() : alphabet[0].ToString();
+                return capitalAlphabet[0].ToString();
             }
 
-            capitalLetters = char.IsUpper(current[0]);
+            current = RemoveSpecialCharacters(current);
+
+            var capitalLetters = char.IsUpper(current[0]);
 
             return Base26Sequence(capitalLetters).SkipWhile(x => x != current).Skip(1).First();
         }
 
         private static IEnumerable<string> Base26Sequence(bool capitalLetters)
         {
-            long i = 0L;
+            var i = 0L;
             while (true)
             {
                 yield return Base26Encode(i++, capitalLetters);
@@ -42,6 +43,21 @@ namespace InfiniteAlphabetSequenceGenerator
             } while (value-- != 0);
 
             return returnValue;
+        }
+
+        private static string RemoveSpecialCharacters(string str)
+        {
+            var sb = new StringBuilder();
+
+            foreach (char c in str)
+            {
+                if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+                {
+                    sb.Append(c);
+                }
+            }
+
+            return sb.ToString();
         }
     }
 }
