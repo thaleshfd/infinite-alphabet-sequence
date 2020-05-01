@@ -8,8 +8,6 @@ e.g. A -> B -> C -> ..... -> Z -> AA -> AB.
 
 If you need to get the next alphabet letter infinitely that's what you need. 
 
-**Don't work for special characters** next update I'll implement this.
-
 ### Installing
 
 Via nuget:
