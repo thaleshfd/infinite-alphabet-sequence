@@ -9,7 +9,8 @@
     <PackageTags>infinite alphabet sequence</PackageTags>
     <PackageProjectUrl>https://github.com/thaleshfd/infinite-alphabet-sequence</PackageProjectUrl>
     <Version>1.0.6</Version>
-    <PackageLicenseUrl>https://github.com/thaleshfd/infinite-alphabet-sequence</PackageLicenseUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
 </Project>
