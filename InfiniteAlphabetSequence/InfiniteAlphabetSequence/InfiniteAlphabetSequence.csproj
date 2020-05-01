@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <Authors>thaleshfd</Authors>
     <Company>thaleshfd</Company>
     <RepositoryUrl>https://github.com/thaleshfd/infinite-alphabet-sequence</RepositoryUrl>
