@@ -1,5 +1,5 @@
 
-# infinite-alphabet-sequence
+# infinite-alphabet-sequence | ![.NET Core](https://github.com/thaleshfd/infinite-alphabet-sequence/workflows/.NET%20Core/badge.svg?branch=master)
 
 Infinite alphabet sequence generator
 e.g. A -> B -> C -> ..... -> Z -> AA -> AB.
